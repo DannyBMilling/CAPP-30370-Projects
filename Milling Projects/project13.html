@@ -1,0 +1,81 @@
+<html>
+  <head>
+    <meta http-equiv="Content-Style-Type" content="text/css" /> 
+    <title>project-13.html</title>
+    <link href="/library/skin/tool_base.css" type="text/css" rel="stylesheet" media="all" />
+    <link href="/library/skin/nd/tool.css" type="text/css" rel="stylesheet" media="all" />
+    <script type="text/javascript" language="JavaScript" src="/library/js/headscripts.js"></script>
+    <style>#mouse {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background: blue;
+  right: 50%;
+  top: 30%;
+}</style>
+  </head>
+  <body>
+
+<h1> Danny Milling's Project 13</h1>
+
+<h2>One</h2>
+<button id="one">Alert</button>
+
+<h2>Two</h2>
+<button id="two">Prompt</button>
+
+<h2>Three</h2>
+
+<h2>Four</h2>
+<div id="mouse"></div>
+
+<h2>Five</h2>
+<form>
+First: <input type="number" name="num"><br>
+Second: <input type="number" name="number">
+</form>
+<button id="comp">Compare</button>;
+
+<script>
+document.getElementById('one').addEventListener("click", function(){
+  alert('you can click a button');
+});
+
+document.getElementById('two').addEventListener("click", function(){
+  var input_name = prompt('What is your name?');
+  for (i = 0; i < 5; i++) {
+    console.log(input_name);
+  }
+});
+
+
+
+var my_other_array = ['red', 'yellow','orange','blue','green','blue','purple'];
+for(i = 0; i < my_other_array.length; i++) {
+  document.write(my_other_array[i]);document.write('<pre>');
+}
+
+
+
+var box = document.getElementById('mouse');
+mouse.addEventListener("mouseover", function(){
+  console.log("The mouse is in the box");
+});
+mouse.addEventListener("mousemove", function(){
+  console.log("The mouse is out of the box");
+});
+
+var numone = num;
+ var numtwo = number;
+document.getElementById('comp').addEventListener("click", function(){
+
+ if(numone == numtwo)
+ {alert("They are equal");
+ }
+  else{
+    alert("They are not equal");
+  }
+});
+</script>
+  </body>
+</html>

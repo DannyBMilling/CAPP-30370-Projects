@@ -1,0 +1,52 @@
+
+.box1 {
+  display:inline-block;
+  margin:2em;
+  width:250px;
+  height:250px;
+  background-color:orange;
+  transition:all 1s ease-in-out;
+  box-shadow: 5px 5px 5px 5px black;
+}
+.box1:hover {
+  background-color:black;
+  box-shadow: 5px 5px 5px 5px orange;
+  
+} 
+
+.box2 {
+  display:inline-block;
+  margin:2em;
+  width:250px;
+  height:250px;
+  background-color:red;
+  transition:all 1s ease-in-out;
+}
+.box2:hover {
+  transform:scale(1.05,1.05);
+  transform: rotate(25deg);
+  transform-origin: right top;
+} 
+
+.turtle {
+  margin:2em;
+  transition:all 1s ease;
+}
+.turtle:hover {
+ transform:rotate(180deg);
+}
+.cubs {
+  margin:2em;
+  transition:all 1s ease;
+}
+.cubs:hover {
+  transform: scaleX(1.5,1.5);
+  
+}
+.tail {
+  margin:2em;
+  transition:all 1s ease;
+}
+.tail:hover {
+transform:skew(-20deg);
+}

@@ -1,0 +1,28 @@
+h1 {text-align: center}
+
+nav ul
+{margin:0; padding:0; list-style:none;
+ }
+nav ul li a {
+  display: block;
+  width: 400px;
+  text-align: center;
+  text-decoration: none;
+  padding: .5em;
+  color: white;
+  background-color: blue;
+  border-radius: .5em;
+  margin: .25em;
+
+}
+
+@media only screen{
+  main {width:400px; float:right;}
+  main {margin-right:3%;}
+  main {display:inline-block; width:33%;}
+  nav {float: left; width: 400px;
+}
+  
+@media only screen {
+  img {float: right; width: 800px; max-width: 40%;
+}
